@@ -1,4 +1,4 @@
-package com.cameron.colour_code_finder;
+package com.cameron.colourcodefinder;
 
 import java.util.ArrayList;
 import java.util.Scanner;

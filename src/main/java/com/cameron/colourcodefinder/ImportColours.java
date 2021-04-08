@@ -1,4 +1,4 @@
-package com.cameron.colour_code_finder;
+package com.cameron.colourcodefinder;
 import java.io.IOException;
 import java.util.ArrayList;
 
