@@ -19,7 +19,7 @@ public class Search extends ImportColours{
                 System.out.println("--- Please note: If two hex codes are returned when you search for one colour, it is because two of the same colour exist and they are slightly different.");
                 System.out.println("--- To exit the program, enter 'quit'.");
                 System.out.println("--- List of available colours:");
-                // print out all colour's and their hex code
+                // Print out all colour's and their hex code
                 for (String colourName : colourNames) {
                     System.out.println(colourName);
                 }
