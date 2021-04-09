@@ -33,13 +33,8 @@ class ImportColours {
                 colourNamesComplete.add(name);
                 colourNames.add(name);
             }
-            // Removing rgb value for each colour in colourNames
-            //colourNames.removeIf(s -> s.contains("rgb"));
             // Removing hsl value for each colour in colourNames
             colourNames.removeIf(s -> s.contains("hsl"));
-
-            // Removing rgb value for each colour in colourNamesComplete
-            //colourNamesComplete.removeIf(s -> s.contains("rgb"));
             // Removing hsl value for each colour in colourNamesComplete
             colourNamesComplete.removeIf(s -> s.contains("hsl"));
 
