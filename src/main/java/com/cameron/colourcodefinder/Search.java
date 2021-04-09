@@ -35,7 +35,10 @@ public class Search extends ImportColours{
             int index = 0;
             for(String string : colourNamesComplete){
                 if(string.matches(itemToFind)){
+                    // index+1 for hex code
                     System.out.println(colourNamesComplete.get(index+1));
+                    // index+2 for rgb value
+                    System.out.println(colourNamesComplete.get(index+2));
                 }
                 index++;
             }

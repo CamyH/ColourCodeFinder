@@ -25,21 +25,16 @@ class ImportColours {
                 colourData.add(link.text());
             }
 
-            for (String colourDatum : colourData) {
-                String[] split = colourDatum.split(" "); // This gives you an array of items split on spaces " "
+            for (String colourData : colourData) {
+                String[] split = colourData.split(" "); // This gives you an array of items split on spaces " "
                 String name = split[0]; // and the first item split[0] will be the colourName
-                name = name.replaceAll("(SYSTEM)", ""); // replaces all occurences of "(SYSTEM)" with nothing effectively removing them
+                name = name.replaceAll("(SYSTEM)", ""); // replaces all occurrences of "(SYSTEM)" with nothing effectively removing them
 
                 colourNamesComplete.add(name);
                 colourNames.add(name);
             }
-            // Removing rgb value for each colour in colourNames
-            colourNames.removeIf(s -> s.contains("rgb"));
             // Removing hsl value for each colour in colourNames
             colourNames.removeIf(s -> s.contains("hsl"));
-
-            // Removing rgb value for each colour in colourNamesComplete
-            colourNamesComplete.removeIf(s -> s.contains("rgb"));
             // Removing hsl value for each colour in colourNamesComplete
             colourNamesComplete.removeIf(s -> s.contains("hsl"));
 
