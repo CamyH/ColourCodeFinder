@@ -6,6 +6,7 @@ import java.util.Scanner;
 public class Search extends ImportColours{
     public static void main(String[] args) {
         ImportColours importColours = new ImportColours();
+        // Call method importAllColours
         importColours.ImportAllColours();
         // Getting the arrayLists from ImportColours to be used within Search class
         ArrayList<String> colourNames = getColourNames();

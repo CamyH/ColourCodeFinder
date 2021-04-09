@@ -26,9 +26,9 @@ class ImportColours {
             }
 
             for (String colourDatum : colourData) {
-                String[] split = colourDatum.split(" "); //# This gives you an array of items split on spaces " "
-                String name = split[0]; //# and the first item split[0] will be the colourName
-                name = name.replaceAll("(SYSTEM)", ""); //# replaces all occurences of "(SYSTEM)" with nothing effectively removing them
+                String[] split = colourDatum.split(" "); // This gives you an array of items split on spaces " "
+                String name = split[0]; // and the first item split[0] will be the colourName
+                name = name.replaceAll("(SYSTEM)", ""); // replaces all occurences of "(SYSTEM)" with nothing effectively removing them
 
                 colourNamesComplete.add(name);
                 colourNames.add(name);
