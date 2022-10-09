@@ -40,6 +40,8 @@ class ImportColours {
 
         } catch(IOException e) {
             e.printStackTrace();
+            System.err.println(e.getMessage());
+            System.err.println("Failed to import colours.");
         }
     }
 

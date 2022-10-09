@@ -30,18 +30,26 @@ public class Search extends ImportColours{
             if (itemToFind.contains("quit")) {
                 System.exit(0);
             }
-
-            // Search colourNamesComplete arrayList and if colour is found, print output
-            int index = 0;
-            for(String string : colourNamesComplete){
-                if(string.matches(itemToFind)){
-                    // index+1 for hex code
-                    System.out.println(colourNamesComplete.get(index+1));
-                    // index+2 for rgb value
-                    System.out.println(colourNamesComplete.get(index+2));
-                }
-                index++;
+            // Call method to find colour code
+            if (!FindColourCode(colourNamesComplete, itemToFind)) {
+                System.out.println("Unable to find colour. Try again.");
             }
         }
+    }
+
+    private static Boolean FindColourCode(ArrayList<String> colourNamesComplete, String itemToFind) {
+        // Search colourNamesComplete arrayList and if colour is found, print output
+        int index = 0;
+        for(String string : colourNamesComplete){
+            if(string.matches(itemToFind)){
+                // index+1 for hex code
+                System.out.println(colourNamesComplete.get(index+1));
+                // index+2 for rgb value
+                System.out.println(colourNamesComplete.get(index+2));
+                return true;
+            }
+            index++;
+        }
+        return false;
     }
 }
